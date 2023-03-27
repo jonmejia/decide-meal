@@ -1,6 +1,11 @@
 function Lunch(){
     const lunchFoods: any[] = ["Turkey Sandwich","Pizza","Chicken with Brocolli","Pad thai","Chicken Ceaser Salad"]
-    return lunchFoods[Math.floor(Math.random()* lunchFoods.length)]
+    function decideLunch() {
+        alert(lunchFoods[Math.floor(Math.random()* lunchFoods.length)]);
+      }
+    return (
+        <button onClick={decideLunch}>Lunch</button>
+    )
 }
 
-export default Lunch 
+export default Lunch
